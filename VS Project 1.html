@@ -1,0 +1,45 @@
+<!--Andrew Bell's Blast Off Assignment-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style type="text/css">
+p {
+color: rgb(17, 121, 112);
+font-size: 250%;
+font-weight: 900;
+font-family:'cursive', cursive, cursive;
+}
+
+<!--countdown variable value and function -->
+
+</style>
+<script type= "text/javascript">
+var countDown = 10;
+document.getElementById("countDownlabel").innerHTML = countDown;
+function runCountdown ()
+{
+countDown --;
+if(countDown != 0 )
+{
+document.getElementById("countDownlabel").innerHTML = countDown;
+}
+else
+{
+document.getElementById("blastOff").innerHTML = "Blast Off!!!!!!";
+}
+}
+
+<!-- gives uat icon positioning and ID names, enables start to change variable -->
+
+</script>
+<!-- Comment -->
+<title>Document</title>
+</head>
+<body>
+<img src="file:///C:/Users/ticke/Downloads/UATspaceLogo-2%20(1).jpg" style="width:300px;height: 300px;">
+<p id="countDownlabel" ></p>
+<p id="blastOff" ></p>
+<button id="startCount" onclick = "runCountdown()" >Start</button>
+</body>
+</html>
